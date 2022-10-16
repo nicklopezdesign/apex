@@ -20,57 +20,6 @@ li {
 /*h5 {
   color:#6a6866;
 }*/
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 1200px) {
-  h1, h2, h3, h4, h5, p, div {
-    text-align: center;
-  }
-
-  .hero-img {
-    float: none !important;
-  }
-
-  /* .navbar-collapse {
-    text-align: right !important;
-  } */
-
-  .feature-image {
-    border-radius: 30px 30px 0 0 !important;
-    width: 50% !important;
-    height: auto !important;
-  }
-
-  .feature-main-light {
-    border-radius: 30px !important;
-  }
-
-  .feature-main-dark {
-    border-radius: 30px 30px 0 0;
-  }
-
-  .feature-details-dark {
-    border-radius: 0 0 30px 30px !important;
-    border-top: 1px solid #111;
-  }
-
-  .testimonials-col {
-    flex: 50% !important;
-    max-width: 50% !important;
-  }
-
-  .last-testimonials {
-    display: none;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
-  .testimonials-col {
-    flex: 100% !important;
-    max-width: 100% !important;
-  }
-}
-
 p {
   color: #6a6866;
 }
@@ -88,8 +37,6 @@ p {
 .feat-btn {
   color: #1f1f1e;
   background-color: #b8d5e2;
-  /*width: 165px;
-  height: 46px;*/
   padding: 10px 50px !important;
   border-radius: 23px;
   text-align: center;
@@ -247,6 +194,10 @@ p {
   vertical-align: middle;
 }
 
+.feature-section-half-text {
+  margin-top: 10%;
+}
+
 .feature-details-light {
   padding: 60px;
 }
@@ -373,9 +324,6 @@ p {
   padding: 7% 0;
 }
 
-/*.testimonial-section {
-  background-color: #000;
-}*/
 .testimonials-container {
   display: flex;
   flex-wrap: wrap;
@@ -406,7 +354,11 @@ p {
 
 .testimonials-title {
   padding: 0 20px 100px;
-  margin: 40px 20px;
+  margin: 20px 20px;
+}
+
+.testimonials-title h2 {
+  font-size: 4rem;
 }
 
 .testimonials-image {
@@ -470,7 +422,7 @@ p {
 }
 
 .footer-logo {
-  width: 40%;
+  max-width: 300px;
   margin: 40px 0;
 }
 
@@ -479,6 +431,17 @@ p {
 }
 
 /* footer FORM styles  */
+
+.footer-form-title {
+  color: #6a6866;
+  margin: 0 0 10px 20px;
+}
+
+.footer-form-text {
+  margin: 0 0 40px 20px;
+  font-weight: 200;
+}
+
 .footer-form input {
   color: #6a6866;
   background-color: #181817;
@@ -488,9 +451,11 @@ p {
   border-radius: 30px;
   width: 46%;
 }
+
 .footer-form-astrix {
   color: #fff;
 }
+
 .message-box {
   color: #6a6866;
   background-color: #181817;
@@ -526,5 +491,101 @@ p {
 .copyright-text {
   font-size: .7rem;
   color: #323130;
+}
+
+.copyright-link {
+  color: #6a6866;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.copyright-link:hover {
+  color: #888;
+}
+
+.copyright-section {
   margin-top: 7%;
+}
+
+/* RESPONSIVE LAYOUT DESIGN FOR MOBILE BELOW
+RESPONSIVE LAYOUT DESIGN FOR MOBILE BELOW
+RESPONSIVE LAYOUT DESIGN FOR MOBILE BELOW
+RESPONSIVE LAYOUT DESIGN FOR MOBILE BELOW
+RESPONSIVE LAYOUT DESIGN FOR MOBILE BELOW */
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1200px) {
+  h1, h2, h3, h4, h5, p, div {
+    text-align: center;
+  }
+
+  .hero-img {
+    float: none;
+  }
+
+  /* .navbar-collapse {
+    text-align: right !important;
+  } */
+  .feature-image {
+    border-radius: 30px 30px 0 0;
+    width: 50%;
+    height: auto;
+  }
+
+  .feature-main-light {
+    border-radius: 30px;
+  }
+
+  .feature-main-dark {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .feature-details-dark {
+    border-radius: 0 0 30px 30px;
+    border-top: 1px solid #111;
+  }
+
+  .cta-text {
+    padding-right: 0;
+  }
+
+  .testimonials-col {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .testimonials-item p {
+    font-size: 1rem;
+  }
+
+  .last-testimonials {
+    display: none;
+  }
+
+  .copyright-section {
+    margin: 20% auto;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+  .testimonials-col {
+    flex: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .big-heading {
+    font-size: 3rem;
+  }
+
+  .navbar-brand img {
+    max-width: 200px;
+  }
+
+  .footer-logo {
+    max-width: 200px;
+  }
+
+  .message-box {
+    border-radius: 20px;
+  }
 }
